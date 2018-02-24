@@ -14,3 +14,12 @@ try:
     api.update_status("Hello, world!")
 except TweepyError:
     print "Could not tweet"
+    
+    def main():
+  # Open and read corpus
+  corpus = open("simple-corpus.txt", "r")
+  word_lines = corpus.readlines()
+  corpus.close()
+
+if __name__ == '__main__':
+  main()
